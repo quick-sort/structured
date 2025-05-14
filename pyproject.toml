@@ -1,0 +1,19 @@
+[project]
+name = "structured"
+version = "0.1.0"
+description = "Structure documents in human way"
+readme = "README.md"
+authors = [
+    { name = "quick-sort", email = "quick-sort@outlook.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "python-docx>=1.1.2",
+]
+
+[project.scripts]
+structured = "structured:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
